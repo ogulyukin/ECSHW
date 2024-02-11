@@ -24,6 +24,7 @@ namespace EcsEngine.Systems.View
                 _inactivePool.Value.Add(entity);
                 _filter.Pools.Inc3.Get(entity).value.SetParent(_poolContainer.Pools.Inc3.Get(container).value);
                 _filter.Pools.Inc2.Get(entity).value = _poolContainer.Pools.Inc2.Get(container).value;
+                _filter.Pools.Inc1.Del(entity);
             }
         }
     }

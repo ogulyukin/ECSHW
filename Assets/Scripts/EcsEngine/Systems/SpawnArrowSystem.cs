@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace EcsEngine.Systems 
 {
-    sealed class SpawnArrowSystem : IEcsRunSystem
+    internal sealed class SpawnArrowSystem : IEcsRunSystem
     {
         private readonly EcsFilterInject<Inc<FireRequest, ArrowWeapon>, Exc<InactiveTag, DeadTag>> _filter;
         private readonly EcsFilterInject<Inc<ArrowPoolContainerTag, Container>> _poolFilter;
